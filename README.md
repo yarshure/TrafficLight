@@ -17,10 +17,12 @@ import coremltools
 caffe_model = ('train_squeezenet_scratch_trainval_manual_p2__iter_8000.caffemodel', 'deploy.prototxt')
 labels = 'labels.txt'
 coreml_model = coremltools.converters.caffe.convert(caffe_model,class_labels=labels,  image_input_names='data')
-coreml_model.save('TFM.mlmodel')```
-
+coreml_model.save('TFM.mlmodel')
 ```
-cat labels.txt 
+
+
+labels.txt 
+```
 none
 green
 red
